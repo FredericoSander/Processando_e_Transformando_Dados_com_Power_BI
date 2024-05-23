@@ -1,4 +1,5 @@
 # Processando e Tranformando Dados com Power BI
+<<<<<<< HEAD
 
 
 
@@ -52,3 +53,5 @@ Relação de Ações de tratamento de dados
 |Ação|Colunas afetadas|
 |----|----------------|
 |Exclusão de coluna|azure_company.employeet,azure_company.Project|
+=======
+>>>>>>> 0ef3e1c18fdaeec1f04330dba024b0546414ed05
