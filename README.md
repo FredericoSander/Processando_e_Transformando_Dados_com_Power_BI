@@ -109,7 +109,7 @@ Relação de Ações de tratamento de dados
  
  - Imagem da tabela departament banco de dados Azure_Company
 <div aling="center">
- <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Employee.png">
 </div>
 
 
@@ -123,7 +123,7 @@ Relação de Ações de tratamento de dados
 
 - Imagem da tabela departament banco de dados Azure_Company
 <div aling="center">
- <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Project.png">
 </div>
 
 ## Tabela Works_on
@@ -136,7 +136,7 @@ Relação de Ações de tratamento de dados
 
 - Imagem da tabela departament banco de dados Azure_Company
 <div aling="center">
- <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Works%20on.png">
 </div>
 
 ## Tabela Employee-Manager
@@ -149,7 +149,7 @@ Relação de Ações de tratamento de dados
 
 - Imagem da tabela departament banco de dados Azure_Company
 <div aling="center">
- <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Employee_manager.png">
 </div>
 
 ## Tabela Employee_departament
@@ -163,7 +163,7 @@ Relação de Ações de tratamento de dados
 
 - Imagem da tabela departament banco de dados Azure_Company
 <div aling="center">
- <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Employee_departament.png">
 </div>
 
 ## Criação do relacionamentos entre tabelas
