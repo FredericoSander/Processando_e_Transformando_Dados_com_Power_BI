@@ -33,17 +33,17 @@ A criação da instância do MySQL na Azure, configuração do banco de dados pe
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Imagem.%20BD%20Azure.png">
 </div>
-# 
+
 - Imagem da seleção do tipo de conexão do banco de dados com o Power BI
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Sele%C3%A7%C3%A3o%20do%20banco%20de%20dados.png">
 </div>
-# 
+
 - Imagem da configuração do banco de dados no Power BI
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Acesso%20ao%20servidor.png">
 </div>
-# 
+ 
 - Imagem do carregamento das tabelas do banco de dados Azure_Company
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
@@ -79,7 +79,7 @@ Relação de Ações de tratamento de dados
 
 - Imagem da tabela Departament location do banco de dados Azure_Company
 <div aling="center">
- <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Departament%20Location.png">
 </div>
 
 ## Tabela Dependent
@@ -92,7 +92,7 @@ Relação de Ações de tratamento de dados
 
 - Imagem da tabela Dependent do banco de dados Azure_Company
 <div aling="center">
- <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Dependent.png">
 </div>
 
 ## Tabela Employee
