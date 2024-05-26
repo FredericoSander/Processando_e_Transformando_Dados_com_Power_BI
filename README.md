@@ -49,7 +49,6 @@ A criação da instância do MySQL na Azure, configuração do banco de dados pe
 </div>
 
 
-
 ## Tabela Departament
 
 Relação de Ações de tratamento de dados
@@ -63,6 +62,12 @@ Relação de Ações de tratamento de dados
 |Inserir localização do departamento| Foi utilizado a mescla de consultas para associar a cada departamento da consulta departament a localização existente na tabela dept.location. Neste caso foi utilizado a mescla de colunas devido a necessidade de combinar as informações que contemple o departamento e a localização em uma unica estrutura. Ainda neste cenário não se deve utilizar a  o atribuir de colunas pois isso iria apenas adicionar uma nova coluna que deve ser baaseada em um cálculo ou experssão DAX. |
 | Exclusão de colunas| Exclusão da coluna locations que não será utilizados nos relatórios.|
 
+
+- Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Departament.png">
+</div>
+
 ## Tabela Departament locations
 
 Relação de Ações de tratamento de dados
@@ -71,6 +76,11 @@ Relação de Ações de tratamento de dados
 |Renomear tabela|Alterar o nome de azure_company dept_locations para dept_locations|
 |Remover colunas|Exclusão da coluna azure_company.departament|
 
+- Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+</div>
+
 ## Tabela Dependent
 
 Relação de Ações de tratamento de dados
@@ -78,6 +88,11 @@ Relação de Ações de tratamento de dados
 |----|----------------|
 |Renomear tabela|Alterar o nome de azure_company dependent para dependent|
 |Exclusão de coluna|azure_company.employee|
+
+- Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+</div>
 
 ## Tabela Employee
 
@@ -92,6 +107,10 @@ Relação de Ações de tratamento de dados
 |Junção de nomes|Foi mesclado o F.name e o L.name dos colaboradores para cria um unico nome do colaborador|
 |Junção de colaboradores e gerentes|Foi realizada uma meslca na consulta employee para associar a cada colaborador o nome de seu respectivo gerente|
  
+ - Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+</div>
 
 
 ## Tabela Project
@@ -102,6 +121,11 @@ Relação de Ações de tratamento de dados
 |Renomear tabela|Alterar o nome de azure_company Project para Project|
 |Exclusão de coluna|azure_company.departament,azure_company.works_on|
 
+- Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+</div>
+
 ## Tabela Works_on
 
 Relação de Ações de tratamento de dados
@@ -109,6 +133,11 @@ Relação de Ações de tratamento de dados
 |----|----------------|
 |Renomear tabela|Alterar o nome de azure_company Works_on para Works_on|
 |Exclusão de coluna|azure_company.employeet,azure_company.Project|
+
+- Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+</div>
 
 ## Tabela Employee-Manager
 
@@ -118,6 +147,11 @@ Relação de Ações de tratamento de dados
 |Criação da tabela Employee-Manager | A consulta employee foi duplicada para criar uma nova tabela denominada Employee-Manager.|
 |Exclusão de colunas|Todas as colunas da consulta Employee-manager foram excluídas com excessão da colunas E.name e N.manager|
 
+- Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+</div>
+
 ## Tabela Employee_departament
 
 Relação de Ações de tratamento de dados
@@ -125,3 +159,27 @@ Relação de Ações de tratamento de dados
 |----|----------------|
 |Criação da tabela Employee_departament| a tabela foi criada a partir da mescla das consultas employee e departament, para relacionar o departamento aos colaboradores|
 |Exclusão de colunas| Foi realizada a exclusão de todas as colunas da tabela employee_departament, com exceção das colunas Fname, Lname, Ssn, departament.Dname e Dno|
+
+
+- Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+</div>
+
+## Criação do relacionamentos entre tabelas
+
+Terminada a etapa de tratamento dos dados do banco de dados Azure-Company, foi relizada a etapa de criação de relacionamento entre tabela dpara possibilitar a elabora de um relatório com as principais informações. Fui utilizado no modelo estrela na criação dos relacionametos
+
+- Imagem da estrutura de relacionamentos criada
+div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+</div>
+
+## Company Report
+
+Utilizando o banco de dados Azure_Company fori elaborado o Company report com a principais informaç~eos persistidas na base de dados. O Company report está disponível para interação por meio link [Company Report]()
+
+- Imagem da tabela departament banco de dados Azure_Company
+<div aling="center">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Company%20report.png">
+</div>
