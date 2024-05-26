@@ -2,7 +2,7 @@
 
 
 ## Descrição do projeto
-<p align="justify"> O projeto consiste na criação de uma instância Azure para MySQL, na qual posteriormente será criado um banco de dados denomidado Azure_Company, utilizando para isso os scripts disponibilizado no repositório do **GitHub** . Após a criação do banco de dados deve-se realizar a persistencia dos dados e integrar o banco Azure Company com o Power Bi para realizar a transformação dos dados.</p>
+ O projeto consiste na criação de uma instância Azure para MySQL, na qual posteriormente será criado um banco de dados denomidado Azure_Company, utilizando para isso os scripts disponibilizado no repositório da [Juliana Zanellatto - power bi analyst - Módulo 3 Desafio de projeto](https://github.com/julianazanelatto/power_bi_analyst/tree/main/M%C3%B3dulo%203/Desafio%20de%20Projeto) . Após a criação do banco de dados deve-se realizar a persistencia dos dados e integrar o banco Azure Company com o Power Bi para realizar a transformação dos dados.
 
  Os scripts de criação e inserção de dados estão disponíveis nos link a seguir: [Script de criação do banco de dados](bit.ly/3wPG4JH) e [Script de dados para ser persistido](https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Script%20SQL/insercao_de_dados_e_queries_sql.sql).
 
@@ -76,7 +76,7 @@ Relação de Ações de tratamento de dados
 |Renomear tabela|Alterar o nome de azure_company dept_locations para dept_locations|
 |Remover colunas|Exclusão da coluna azure_company.departament|
 
-- Imagem da tabela departament banco de dados Azure_Company
+- Imagem da tabela Departament location do banco de dados Azure_Company
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
 </div>
@@ -89,7 +89,7 @@ Relação de Ações de tratamento de dados
 |Renomear tabela|Alterar o nome de azure_company dependent para dependent|
 |Exclusão de coluna|azure_company.employee|
 
-- Imagem da tabela departament banco de dados Azure_Company
+- Imagem da tabela Dependent do banco de dados Azure_Company
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
 </div>
@@ -107,7 +107,7 @@ Relação de Ações de tratamento de dados
 |Junção de nomes|Foi mesclado o F.name e o L.name dos colaboradores para cria um unico nome do colaborador|
 |Junção de colaboradores e gerentes|Foi realizada uma meslca na consulta employee para associar a cada colaborador o nome de seu respectivo gerente|
  
- - Imagem da tabela departament banco de dados Azure_Company
+ - Imagem da tabela Employee do banco de dados Azure_Company
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Employee.png">
 </div>
@@ -121,7 +121,7 @@ Relação de Ações de tratamento de dados
 |Renomear tabela|Alterar o nome de azure_company Project para Project|
 |Exclusão de coluna|azure_company.departament,azure_company.works_on|
 
-- Imagem da tabela departament banco de dados Azure_Company
+- Imagem da tabela Project do banco de dados Azure_Company
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Project.png">
 </div>
@@ -134,7 +134,7 @@ Relação de Ações de tratamento de dados
 |Renomear tabela|Alterar o nome de azure_company Works_on para Works_on|
 |Exclusão de coluna|azure_company.employeet,azure_company.Project|
 
-- Imagem da tabela departament banco de dados Azure_Company
+- Imagem da tabela Works_on do banco de dados Azure_Company
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Works%20on.png">
 </div>
@@ -147,7 +147,7 @@ Relação de Ações de tratamento de dados
 |Criação da tabela Employee-Manager | A consulta employee foi duplicada para criar uma nova tabela denominada Employee-Manager.|
 |Exclusão de colunas|Todas as colunas da consulta Employee-manager foram excluídas com excessão da colunas E.name e N.manager|
 
-- Imagem da tabela departament banco de dados Azure_Company
+- Imagem da tabela Employee-Manager banco de dados Azure_Company
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Employee_manager.png">
 </div>
@@ -161,7 +161,7 @@ Relação de Ações de tratamento de dados
 |Exclusão de colunas| Foi realizada a exclusão de todas as colunas da tabela employee_departament, com exceção das colunas Fname, Lname, Ssn, departament.Dname e Dno|
 
 
-- Imagem da tabela departament banco de dados Azure_Company
+- Imagem da tabela Employee_departament do banco de dados Azure_Company
 <div aling="center">
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Employee_departament.png">
 </div>
@@ -172,12 +172,12 @@ Terminada a etapa de tratamento dos dados do banco de dados Azure-Company, foi r
 
 - Imagem da estrutura de relacionamentos criada
 div aling="center">
- <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Carregamento%20de%20tabelas.png">
+ <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Relacionamento.png">
 </div>
 
 ## Company Report
 
-Utilizando o banco de dados Azure_Company fori elaborado o Company report com a principais informaç~eos persistidas na base de dados. O Company report está disponível para interação por meio link [Company Report]()
+Utilizando o banco de dados Azure_Company fori elaborado o Company report com a principais informaç~eos persistidas na base de dados. O Company report está disponível para interação por meio link [Company Report](https://app.powerbi.com/view?r=eyJrIjoiMTdkYTVlZDItODZlYy00YTg1LTg4YjUtODgxYWFkOTJhM2JlIiwidCI6IjMxMTU3MGI0LTFhYmMtNGRmZS05NjgzLTFlNGQ4ZDZmOGExNiJ9)
 
 - Imagem da tabela departament banco de dados Azure_Company
 <div aling="center">
