@@ -55,16 +55,20 @@ A criação da instância do MySQL na Azure, configuração do banco de dados pe
 Relação de Ações de tratamento de dados
 |Ação|Colunas afetadas|
 |----|----------------|
+|Renomear tabela|Alterar o nome de azure_company departament para departament|
 |Exclusão de colunas|azure_company.dept_loactions, azure_company.employee,azure_company.project|
 |Mesclar tabelas|Inclusão da coluna Dlocations da tabela Dept_locations|
 |Renomear colunas| alteração do nome da coluna azure_company dept_locations.Dlocation para D.location
 |Mesclar Colunas| União das colunas Dname com a coluna D.locations gerando uma no coluna|
+|Inserir localização do departamento| Foi utilizado a mescla de consultas para associar a cada departamento da consulta departament a localização existente na tabela dept.location. Neste caso foi utilizado a mescla de colunas devido a necessidade de combinar as informações que contemple o departamento e a localização em uma unica estrutura. Ainda neste cenário não se deve utilizar a  o atribuir de colunas pois isso iria apenas adicionar uma nova coluna que deve ser baaseada em um cálculo ou experssão DAX. |
+| Exclusão de colunas| Exclusão da coluna locations que não será utilizados nos relatórios.|
 
 ## Tabela Departament locations
 
 Relação de Ações de tratamento de dados
 |Ação|Descrição|
 |----|----------------|
+|Renomear tabela|Alterar o nome de azure_company dept_locations para dept_locations|
 |Remover colunas|Exclusão da coluna azure_company.departament|
 
 ## Tabela Dependent
@@ -72,20 +76,30 @@ Relação de Ações de tratamento de dados
 Relação de Ações de tratamento de dados
 |Ação|Colunas afetadas|
 |----|----------------|
+|Renomear tabela|Alterar o nome de azure_company dependent para dependent|
 |Exclusão de coluna|azure_company.employee|
 
 ## Tabela Employee
 
+O colaborador James Borg não possui um gerente. Este indica que o colaborador James Borg trata-se do Gerente Geral ou diretor na Azure_Company.
+
 Relação de Ações de tratamento de dados
 |Ação|Colunas afetadas|
 |----|----------------|
+|Renomear tabela|Alterar o nome de azure_company employee para employee|
 |Exclusão de coluna|azure_company.departament, azure_company.employee(Ssn), azure_company.employee(Super_ssn),azure_company.works_on|
+|Separa colunas complexas| Foi realizada a divisão da coluna Address em outras três colunas que irão abrigar o Number_Address, Address e state|
+|Junção de nomes|Foi mesclado o F.name e o L.name dos colaboradores para cria um unico nome do colaborador|
+|Junção de colaboradores e gerentes|Foi realizada uma meslca na consulta employee para associar a cada colaborador o nome de seu respectivo gerente|
+ 
+
 
 ## Tabela Project
 
 Relação de Ações de tratamento de dados
 |Ação|Colunas afetadas|
 |----|----------------|
+|Renomear tabela|Alterar o nome de azure_company Project para Project|
 |Exclusão de coluna|azure_company.departament,azure_company.works_on|
 
 ## Tabela Works_on
@@ -93,4 +107,21 @@ Relação de Ações de tratamento de dados
 Relação de Ações de tratamento de dados
 |Ação|Colunas afetadas|
 |----|----------------|
+|Renomear tabela|Alterar o nome de azure_company Works_on para Works_on|
 |Exclusão de coluna|azure_company.employeet,azure_company.Project|
+
+## Tabela Employee-Manager
+
+Relação de Ações de tratamento de dados
+|Ação|Colunas afetadas|
+|----|----------------|
+|Criação da tabela Employee-Manager | A consulta employee foi duplicada para criar uma nova tabela denominada Employee-Manager.|
+|Exclusão de colunas|Todas as colunas da consulta Employee-manager foram excluídas com excessão da colunas E.name e N.manager|
+
+## Tabela Employee_departament
+
+Relação de Ações de tratamento de dados
+|Ação|Colunas afetadas|
+|----|----------------|
+|Criação da tabela Employee_departament| a tabela foi criada a partir da mescla das consultas employee e departament, para relacionar o departamento aos colaboradores|
+|Exclusão de colunas| Foi realizada a exclusão de todas as colunas da tabela employee_departament, com exceção das colunas Fname, Lname, Ssn, departament.Dname e Dno|
