@@ -4,8 +4,8 @@
 
 ## Descrição do projeto
 <p align="justify"> 
-O projeto consiste na criação de uma instância Azure para MySQL, na qual posteriormente será criado um banco de dados denomidado Azure_Company, utilizando para isso os scripts disponibilizado no repositório do gitHub **Repositório**. Após a criação do banco de dados deve-se realizar a persistencia dos dados e integrar o banco Azure Company com o Power Bi para realizar a transformação dos dados.
-</p> Os scripts de criação e inserção de dados estão disponíveis nos link a seguir: [Script de criação do banco de dados](https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Script%20SQL/script_bd_company.sql) e [Script de dados para ser persistido](https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Script%20SQL/insercao_de_dados_e_queries_sql.sql).
+O projeto consiste na criação de uma instância Azure para MySQL, na qual posteriormente será criado um banco de dados denomidado Azure_Company, utilizando para isso os scripts disponibilizado no repositório do gitHub **Repositório**. Após a criação do banco de dados deve-se realizar a persistencia dos dados e integrar o banco Azure Company com o Power Bi para realizar a transformação dos dados.</p>
+ Os scripts de criação e inserção de dados estão disponíveis nos link a seguir: [Script de criação do banco de dados](https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Script%20SQL/script_bd_company.sql) e [Script de dados para ser persistido](https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Script%20SQL/insercao_de_dados_e_queries_sql.sql).
 <p align="justify">
 A etapa de transformação dos dados teve como objetivo atender as seguintes premiças:
 - Analise os cabeçalhos e tipos de dados.
@@ -23,7 +23,7 @@ A etapa de transformação dos dados teve como objetivo atender as seguintes pre
 - Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir. 
 - Agrupe os dados a fim de saber quantos colaboradores existem por gerente.
 - Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela.
-O relatório em Power Bi pode ser visualizado por meio link: [Relatório Azure_Company]().
+O relatório em Power Bi pode ser visualizado por meio link: [Relatório Azure_Company]().</P>
 
 
 ## Banco de dados Azure_Company
