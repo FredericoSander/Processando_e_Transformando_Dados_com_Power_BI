@@ -185,6 +185,6 @@ Utilizando o banco de dados Azure_Company foi elaborado o Company report com a p
  <img src="https://github.com/Sanderfn/PythonDataAnalytics-Processando-e-Tranformando-Dados-com-Power-BI/blob/main/Imagens/Company%20report.png">
 </div>
 
-## Autores
+## Autor
 
 - [Frederico S N Cota](https://github.com/Sanderfn)
